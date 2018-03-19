@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import android.webkit.*
 import kotlinx.android.synthetic.main.activity_kultu_test_web_browser.*
 
 /**
@@ -137,9 +136,3 @@ class KultuTestWebBrowserActivity : AppCompatActivity() {
     }
 }
 
-class MyWebViewClient : WebViewClient() {
-
-    override fun shouldInterceptRequest(view: WebView?, request: WebResourceRequest?): WebResourceResponse {
-        return super.shouldInterceptRequest(view, request)
-    }
-}
